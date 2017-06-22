@@ -1,0 +1,8 @@
+<?php
+return $config = array(
+	'db' => array(
+		'dsn' => '',
+		'user' => '',
+		'password' => ''
+	)
+);

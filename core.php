@@ -1,16 +1,10 @@
 <?php
 class core
 {
-	public $config = array(
-		'db' => array(
-			'dsn' => 'mysql:dbname=brokerage;host=192.168.10.12;port=3307',
-			'user' => 'b2b_platform',
-			'password' => 'bpf_zova_hspt'
-		)
-	);
-
 	public function __construct()
 	{
+		include 'config.php';
+		$this->config = $config;
 		$this->db = $this->db();
 	}
 
